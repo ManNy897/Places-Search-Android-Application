@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.manny.myapplication.DetailsActivity2">
+    <item
+        android:id="@+id/actionshare"
+        android:icon="@drawable/share"
+        android:title="share"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_like"
+        android:icon="@drawable/blank_heart"
+        android:title="action_favorites"
+        app:showAsAction="always" />
+</menu>

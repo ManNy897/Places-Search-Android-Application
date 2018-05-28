@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.manny.myapplication.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/appbar_padding_top"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--app:layout_scrollFlags="scroll|enterAlways"-->
+            <!--app:popupTheme="@style/AppTheme.PopupOverlay">-->
+
+            <!--</android.support.v7.widget.Toolbar>-->
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pager_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--<android.support.v4.view.PagerTitleStrip-->
+            <!--android:id="@+id/pager_title_strip"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="top"-->
+            <!--android:background="#33b5e5"-->
+            <!--android:textColor="#fff"-->
+            <!--android:paddingTop="4dp"-->
+            <!--android:paddingBottom="4dp" />-->
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fillViewport="true">-->
+
+
+<!--<LinearLayout android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:id="@+id/input_layout_editKey"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="52dp">-->
+
+        <!--<android.support.design.widget.TextInputEditText-->
+            <!--android:id="@+id/editKey"-->
+            <!--android:layout_width="334dp"-->
+            <!--android:layout_height="39dp"-->
+            <!--android:layout_marginEnd="16dp"-->
+            <!--android:layout_marginStart="16dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:ems="10"-->
+            <!--android:hint="@string/edit_message"-->
+            <!--android:inputType="textPersonName" />-->
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    <!--<Spinner-->
+        <!--android:id="@+id/category"-->
+        <!--android:layout_width="334dp"-->
+        <!--android:layout_height="47dp"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--android:layout_marginStart="16dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:entries="@array/planets_array" />-->
+
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:id="@+id/input_layout_distance"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<android.support.design.widget.TextInputEditText-->
+            <!--android:id="@+id/distance"-->
+            <!--android:layout_width="334dp"-->
+            <!--android:layout_height="42dp"-->
+            <!--android:layout_marginEnd="16dp"-->
+            <!--android:layout_marginStart="16dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:ems="10"-->
+            <!--android:hint="@string/distance_message"-->
+            <!--android:inputType="number" />-->
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    <!--<RadioGroup-->
+        <!--android:id="@+id/radioGroup"-->
+        <!--android:layout_width="306dp"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--android:layout_marginStart="16dp"-->
+        <!--android:layout_marginTop="16dp">-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/radioCurrent"-->
+            <!--android:layout_width="291dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:checked="true"-->
+            <!--android:text="@string/current_location_radio" />-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/radioOther"-->
+            <!--android:layout_width="289dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/other_location_radio" />-->
+    <!--</RadioGroup>-->
+
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:id="@+id/input_layout_otherLocation"-->
+        <!--android:layout_width="383dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="52dp">-->
+
+        <!--<android.support.design.widget.TextInputEditText-->
+            <!--android:id="@+id/otherLocation"-->
+            <!--android:layout_width="321dp"-->
+            <!--android:layout_height="44dp"-->
+            <!--android:layout_marginEnd="16dp"-->
+            <!--android:layout_marginStart="32dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:ems="10"-->
+            <!--android:hint="@string/location_text"-->
+            <!--android:inputType="textPersonName" />-->
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linearLayout1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="46dp"-->
+            <!--android:layout_marginBottom="16dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginStart="16dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="onSubmit"-->
+            <!--android:text="@string/button_send" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/button2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="44dp"-->
+            <!--android:layout_marginBottom="16dp"-->
+            <!--android:layout_marginEnd="16dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="onClear"-->
+            <!--android:text="@string/button_clear" />-->
+    <!--</LinearLayout>-->
+
+<!--</LinearLayout>-->
+<!--</ScrollView>-->
